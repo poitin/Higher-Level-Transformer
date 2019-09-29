@@ -16,8 +16,6 @@ data Command = Load String
              | Prog
              | Term
              | Eval
-             | Super
-             | Distill
              | Trans Int
              | Quit
              | Help
