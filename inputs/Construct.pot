@@ -1,0 +1,7 @@
+meet x y = case x of
+              Bot -> y
+            | Value(x) -> Value(x);
+
+construct p x = case (p x) of
+                   True -> Value(x)
+                 | False -> Bot
