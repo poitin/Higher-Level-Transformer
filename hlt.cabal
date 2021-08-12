@@ -1,0 +1,61 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c7c5d6b11ab1122a4e315041c00c63d8f38bd4cc46c57950dbf769fa33fd9fb9
+
+name:           hlt
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/poitin/Higher-Level-Transformer#readme>
+homepage:       https://github.com/poitin/Higher-Level-Transformer#readme
+bug-reports:    https://github.com/poitin/Higher-Level-Transformer/issues
+author:         Geoff Hamilton
+maintainer:     hamilton@computing.dcu.ie
+copyright:      2021 Geoff Hamilton
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/poitin/Higher-Level-Transformer
+
+library
+  exposed-modules:
+      Exception
+      Term
+      Trans
+  other-modules:
+      Paths_Higher_Level_Transformer
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , parsec
+    , pretty
+    , directory
+    , process
+  default-language: Haskell2010
+
+executable hlt
+  main-is: Main.hs
+  other-modules:
+      Exception
+      Term
+      Trans
+  hs-source-dirs:
+      src
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , parsec
+    , pretty
+    , directory
+    , process
+    , hlt
+  default-language: Haskell2010
