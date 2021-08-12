@@ -10,9 +10,9 @@ nrev xs = case xs of
            | Cons(x,xs) -> append (nrev xs) Cons(x,Nil);
 
 qrev xs ys = case xs of
-                Nil        -> ys
-              | Cons(x,xs) -> qrev xs Cons(x,ys);
-
+		        Nil        -> ys
+		      | Cons(x,xs) -> qrev xs Cons(x,ys);
+             
 length xs = case xs of
                Nil        -> Zero
              | Cons(x,xs) -> Succ(length xs);

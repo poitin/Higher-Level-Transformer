@@ -31,7 +31,7 @@ library
       Term
       Trans
   other-modules:
-      Paths_Higher_Level_Transformer
+      Paths_hlt
   hs-source-dirs:
       src
   build-depends:
