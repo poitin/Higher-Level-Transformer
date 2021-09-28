@@ -1,6 +1,6 @@
 # Higher-Level-Transformer
 
-Implementation of the higher-level transformers as described in the paper "<a href="https://arxiv.org/pdf/2108.11347.pdf">The Next 700 Program Transformers</a>".
+Implementation of the higher-level transformers as described in the paper ["The Next 700 Program Transformers"](https://arxiv.org/pdf/2108.11347.pdf)
 
 The implementation can be built and executed using stack.
 
